@@ -1,0 +1,3 @@
+A function for multiplying two large numbers in modulo m, where m is a large number itself
+For example, consider a*b%m. If b is even, we can write a*b = 2a*(b/2) and if b is odd, we can write a*b = a+a*(b-1). Here when b is odd, we do our trick. a*b = a+a1*b1 , where a1 = 2a and b1 = (b-1)/2 . It is because of we know that b-1 is even, when b is odd.
+Though, here we can use recursion. The answer to a*b is a+a1*b1 when b is odd and when b is even, we don't have to do anything with the answer. We only have to multiply a by 2.
